@@ -2,3 +2,13 @@
 <p>Find me in app/views/articles/index.html.erb</p>
 
 <p>Hello!</p>
+
+<h2>List</h2>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= article.title %>
+    </li>
+  <% end %>
+</ul>
