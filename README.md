@@ -22,3 +22,11 @@ Tutorial app.
 
 `bin/rails db:migrate`
 
+## Render (free) deployment
+
+https://docs.render.com/deploy-rails
+
+See `./bin/render-build.sh` and `render.yaml`
+
+View live (takes ~1 minute to spin up free tier): https://tutorial-blog.onrender.com/articles
+
