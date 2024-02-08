@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Tutorial app.
 
-Things you may want to cover:
+## Postgres
 
-* Ruby version
+`brew install postgresql` # first time install of pg
 
-* System dependencies
+`brew services start postgresql`
 
-* Configuration
+`rails db:system:change --to=postgresql`
 
-* Database creation
+`bundle install`
 
-* Database initialization
+`createuser -P -d digitalconfucius` # create user
 
-* How to run the test suite
+`initdb /usr/local/var/postgresql@14 -E utf8` # init pg db
 
-* Services (job queues, cache servers, search engines, etc.)
+`pg_isready` # Verify ready
 
-* Deployment instructions
+`bin/rails db:create`
 
-* ...
+`bin/rails db:migrate`
+
